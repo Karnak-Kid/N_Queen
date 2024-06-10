@@ -1,5 +1,5 @@
-<h2>Description</h2>
-This is an implementation of an N-Queens solver writen in C#, using a genetic algorithm, and visualized in a console application.
+## Description
+This is an implementation of an N-Queens solver written in C#. It employs a genetic algorithm following the  Adam & Eve approach.
 
        _____ _____ _____ _____ _____ _____ _____ _____
       |     |     |     |     |     |     |     |     |
@@ -28,15 +28,13 @@ This is an implementation of an N-Queens solver writen in C#, using a genetic al
       |_____|_____|_____|_____|_____|_____|_____|_____|
          a     b     c     d     e     f     g     h
 
-<h2>Build</h2>
-<h6>Template</h6>
-dotnet build NQueen/NQueen.csproj --runtime <runtime_identifier> --configuration <Release|Debug>
+## Build
+**Template:** dotnet build NQueen/NQueen.csproj --runtime **<runtime_identifier>** --configuration **<Release|Debug>**
 
 The implemented runtime identifiers are:
-	win-x64
-	win-x86
-	linux-x64
-	osx-x64
+* win-x64
+* win-x86
+* linux-x64
+* osx-x64
 	
-<h6>Example</h6>
-dotnet build NQueen/NQueen.csproj --runtime win-x64 --configuration Release
+**Example for Windows:** dotnet build NQueen/NQueen.csproj --runtime **win-x64** --configuration **Release**
