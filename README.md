@@ -38,3 +38,6 @@ The implemented runtime identifiers are:
 * osx-x64
 	
 **Example for Windows:** dotnet build NQueen/NQueen.csproj --runtime **win-x64** --configuration **Release**
+
+## Build
+**Example for Windows:** dotnet run  --framework net8.0  --runtime **win-x64** --configuration **Debug**

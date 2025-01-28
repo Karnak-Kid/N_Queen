@@ -29,18 +29,17 @@ namespace NQueen
             // --- END TIMER ---
             stopWatch.Stop();
             TimeSpan ts = stopWatch.Elapsed;
-            string elapsedTime = String.Format("{0:00}:{1:00}:{2:00}.{3:00}",
-            ts.Hours, ts.Minutes, ts.Seconds,
-            ts.Milliseconds / 10);
+            string elapsedTime = String.Format("{0:00}:{1:00}:{2:00}.{3:00}", ts.Hours, ts.Minutes, ts.Seconds, ts.Milliseconds);
 
-            if (nQueens > 100)
-            {
-                Console.WriteLine("Too big to print.\nGenrations: " + generation + "\nElapsed Time (h:m:s:ms): " + elapsedTime);
+            if(nQueens <= 26){
+                Console.WriteLine(strongestPair[0].PrintBoard());
             }
-            else
-            {
-                Console.WriteLine(strongestPair[0] + "Genrations: " + generation + "\nElapsed Time (h:m:s:ms): " + elapsedTime);
+            else{
+                Console.WriteLine("\nBoard to big to print :/");
             }
+
+            Console.WriteLine("\nGenome: "+strongestPair[0]);
+            Console.WriteLine("Genrations: " + generation + "\nElapsed Time (h:m:s:ms): " + elapsedTime);
         }
 
         // Initializses a population of (populationSize) random board states.

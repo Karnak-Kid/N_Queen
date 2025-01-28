@@ -44,8 +44,17 @@ namespace NQueen
             return count;
         }
 
+        public override string ToString(){
+            string s = "[ ";
+            for(int i = 0; i < state.Length; i++){
+                s += state[i] + " ";
+            }
+            s += "]";
+            return s;
+        }
+
         /*
-           ToStrings a chess board with only (n) queens using 
+           Prints a chess board with only (n) queens using 
            algebraic notation along the edges of the board.
            Example of n = 8:
             _____ _____ _____ _____ _____ _____ _____ _____
@@ -76,7 +85,7 @@ namespace NQueen
               a     b     c     d     e     f     g     h
         */
 
-        public override string ToString()
+        public string PrintBoard()
         {
             string AlphabetCounter(int count)
             {
